@@ -1,0 +1,96 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">FrogRim profile banner</title>
+  <desc id="desc">A dark system dashboard banner for FrogRim showing an AI agent verification pipeline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070b"/>
+      <stop offset="1" stop-color="#0b1017"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#102436" stroke-width="1" opacity="0.65"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="22" fill="url(#grid)" opacity="0.7"/>
+  <rect x="20" y="20" width="1160" height="280" rx="18" fill="none" stroke="#173348"/>
+  <rect x="20" y="20" width="1160" height="280" rx="18" fill="none" stroke="#00e5ff" opacity="0.18">
+    <animate attributeName="opacity" values="0.12;0.32;0.12" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <g transform="translate(70 62)">
+    <text x="0" y="0" fill="#00ff88" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700">SYSTEM.IDENTITY</text>
+    <text x="0" y="54" fill="#eef7ff" font-family="Consolas, Menlo, monospace" font-size="54" font-weight="800">FrogRim</text>
+    <text x="0" y="92" fill="#9fb3c8" font-family="Consolas, Menlo, monospace" font-size="21">Build wide. Verify deep.</text>
+
+    <g transform="translate(0 132)" font-family="Consolas, Menlo, monospace" font-size="15">
+      <text x="0" y="0" fill="#00e5ff">&gt; base</text>
+      <text x="78" y="0" fill="#dbeafe">cross-domain systems</text>
+      <text x="0" y="32" fill="#00e5ff">&gt; focus</text>
+      <text x="88" y="32" fill="#dbeafe">agent proof · robotics evidence · product AI</text>
+      <text x="0" y="64" fill="#00e5ff">&gt; method</text>
+      <text x="98" y="64" fill="#dbeafe">observe -&gt; capture -&gt; verify -&gt; document limits</text>
+    </g>
+  </g>
+
+  <g transform="translate(604 76)" font-family="Consolas, Menlo, monospace">
+    <text x="0" y="-20" fill="#00ff88" font-size="15" font-weight="700">EVIDENCE PIPELINE</text>
+
+    <g fill="#0b1520" stroke-width="2">
+      <rect x="0" y="0" width="110" height="64" rx="10" stroke="#2f6df6"/>
+      <rect x="145" y="0" width="110" height="64" rx="10" stroke="#00b7d8"/>
+      <rect x="290" y="0" width="110" height="64" rx="10" stroke="#00a86b"/>
+      <rect x="435" y="0" width="110" height="64" rx="10" stroke="#ff7a1a"/>
+    </g>
+
+    <g fill="#e8f4ff" font-size="17" font-weight="700">
+      <text x="15" y="39">observe</text>
+      <text x="161" y="39">capture</text>
+      <text x="321" y="39">verify</text>
+      <text x="447" y="39">document</text>
+    </g>
+
+    <g fill="none" stroke="#00e5ff" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 10">
+      <path d="M118 32H137">
+        <animate attributeName="stroke-dashoffset" from="0" to="-26" dur="1.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M263 32H282">
+        <animate attributeName="stroke-dashoffset" from="0" to="-26" dur="1.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M408 32H427">
+        <animate attributeName="stroke-dashoffset" from="0" to="-26" dur="1.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g transform="translate(0 108)" font-size="14">
+      <g>
+        <rect x="0" y="0" width="126" height="40" rx="8" fill="#07161e" stroke="#00e5ff" opacity="0.85"/>
+        <text x="18" y="25" fill="#dbeafe">31/31 tests</text>
+      </g>
+      <g>
+        <rect x="138" y="0" width="138" height="40" rx="8" fill="#071a14" stroke="#00ff88" opacity="0.85"/>
+        <text x="154" y="25" fill="#dbeafe">benchmark 23</text>
+      </g>
+      <g>
+        <rect x="288" y="0" width="138" height="40" rx="8" fill="#150f21" stroke="#8b5cf6" opacity="0.85"/>
+        <text x="304" y="25" fill="#dbeafe">regression 5</text>
+      </g>
+      <g>
+        <rect x="438" y="0" width="148" height="40" rx="8" fill="#1c1208" stroke="#ff7a1a" opacity="0.85"/>
+        <text x="452" y="25" fill="#dbeafe">Forge MVP-2</text>
+      </g>
+    </g>
+  </g>
+
+  <circle cx="1128" cy="62" r="5" fill="#00ff88" filter="url(#glow)">
+    <animate attributeName="r" values="4;8;4" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
